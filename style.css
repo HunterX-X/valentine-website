@@ -1,0 +1,82 @@
+/*
+ * Styles for the Valentine website.
+ * The page uses a soft gradient background and centres the main
+ * content vertically and horizontally. Buttons are styled with
+ * rounded corners and subtle transitions. When the No button is
+ * hovered, its behaviour is controlled via JavaScript rather
+ * than CSS.
+ */
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #ff9a9e 0%, #fad0c4 100%);
+}
+
+/* Main container centres its children vertically and horizontally */
+.valentine-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: auto;
+  text-align: center;
+}
+
+/* Bear GIF images share common sizing */
+.bear-gif {
+  width: 250px;
+  height: auto;
+  margin-bottom: 1rem;
+}
+
+/* Text container replicates the large heading */
+.text-container {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #2f3542;
+  margin-bottom: 1rem;
+}
+
+/* Row for buttons */
+.button-row {
+  display: flex;
+  gap: 1rem;
+}
+
+/* Custom yes button styling */
+.yes-button {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  background-color: #46ee6d;
+  color: #ffffff;
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.yes-button:hover {
+  background-color: #4f7457;
+}
+
+/* Custom no button styling */
+.no-button {
+  background-color: #c90d0d;
+  color: #ffffff;
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.no-button:hover {
+  background-color: #c82333;
+}
